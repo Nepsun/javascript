@@ -11,6 +11,7 @@
 			}
 			function doSecond(){
 				document.write("22222!!");
+				document.write("<br>");
 			}
 
 			function start(){
@@ -19,6 +20,18 @@
 			}
 
 			start();
+
+			////////////////////////////////////// /////////////////////////////////
+			function First(){
+				document.write(" first! ");
+				Second();
+			}
+
+			function Second(){
+				document.write("Second! ");
+				First();
+			}
+			First();
 		</script>
 
 		
